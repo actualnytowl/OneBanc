@@ -27,10 +27,6 @@ def axis(df):
         i += 1
 
 
-# axis(read_file)
-# print(output.to_string())
-
-
 def hdfc(df):
     i = cnt = name = 0
 
@@ -139,7 +135,6 @@ def StandardizeStatement( inputFile, outputFile):
         idfc(read_file)
     output.fillna(0, inplace=True)
     output.to_csv(r"C:\Users\Sagar Annaji\Desktop\Interview_Fresher_Any_Language"+"\\"+outputFile, index=False)
-    # print(output.to_string())
 
-# HDFC-Output-Case1.csv
+    
 StandardizeStatement('ICICI-Input-Case2.csv','ICICI-Output-Case2.csv')
