@@ -24,6 +24,7 @@ def axis(df):
             output.loc[cnt] = [date, " ".join(trans if currency == "INR" else trans[:len(trans)-1]), debit, credit, currency, name, dom_or_int, location]
             cnt += 1
             i += 1
+            if i == len(df): break
         i += 1
 
 
@@ -55,6 +56,7 @@ def hdfc(df):
             output.loc[cnt] = [date, " ".join(trans if currency == "INR" else trans[:len(trans)-1]), debit, credit, currency, name, dom_or_int, location]
             cnt += 1
             i += 1
+            if i == len(df): break
         i += 1
 
 
@@ -87,6 +89,7 @@ def icici(df):
             # print(date,", ", " ".join(trans if currency == "INR" else trans[:len(trans)-1]),", ", debit,", ", credit)
             cnt += 1
             i += 1
+            if i == len(df): break
         i += 1
 
 
@@ -119,6 +122,7 @@ def idfc(df):
             output.loc[cnt] = [date, " ".join(trans if currency == "INR" else trans[:len(trans)-1]), debit, credit, currency, name, dom_or_int, location]
             cnt += 1
             i += 1
+            if i == len(df): break
         i += 1
 
 
